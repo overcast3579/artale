@@ -8,6 +8,16 @@ body {
     padding: 20px;
 }
 
+/* login */
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: 100px auto;
+}
+
 /* 導覽列樣式 */
 nav {
     background-color: #4a90e2;
