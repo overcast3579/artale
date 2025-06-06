@@ -18,9 +18,26 @@ document.addEventListener("DOMContentLoaded", function () {
         const matchedUser = users.find(user => user.acc === hashedAcc && user.pwd === hashedPwd);
         if (matchedUser) {
             localStorage.setItem("loggedIn", "1");
+            localStorage.setItem("account", username);
             location.href = "html/home.html"; 
         } else {
             alert("帳號或密碼錯誤！");
         }
+    });
+    
+    // 沒登入就導回登入頁
+    if (localStorage.getItem("loggedIn") !== "1") {
+        location.href = "../index.html";
+    }
+
+    const userAcc = localStorage.getItem("account");
+    if (userAcc) {
+        document.getElementById("userAcc").textContent = userAcc;
+    }
+    // 登出功能
+    document.getElementById("logoutBtn").addEventListener("click", function () {
+        localStorage.removeItem("loggedIn");
+        localStorage.removeItem("account");
+        location.href = "../index.html";
     });
 });
