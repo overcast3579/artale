@@ -8,43 +8,6 @@ body {
     padding: 20px;
 }
 
-/* login */
-.login-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 300px;
-    margin: 100px auto;
-}
-
-/* 導覽列樣式 */
-nav {
-    background-color: #4a90e2;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
-
-nav ul li:hover {
-    opacity: 0.8;
-}
-
 /* 標題段落 */
 p {
     font-size: 20px;

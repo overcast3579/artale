@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { acc: "3d200b72bf2ee84aef113d07ef0f9a7c", pwd: "db0edd04aaac4506f7edab03ac855d56" }, // vv
         { acc: "30ec85b4d1ce02fe671cf56c94fe758b", pwd: "30ec85b4d1ce02fe671cf56c94fe758b" }, // oc
     ];
-
+    localStorage.removeItem("loggedIn");
+    localStorage.removeItem("account");
     loginForm.addEventListener("submit", function (e) {
         e.preventDefault();
         const username = document.getElementById("username").value.trim();
@@ -24,10 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("帳號或密碼錯誤！");
         }
     });
-    
+
     // 沒登入就導回登入頁
-    if (localStorage.getItem("loggedIn") !== "1") {
-        location.href = "../index.html";
+    const currentPage = window.location.pathname;
+    const isLoginPage = currentPage.includes("index.html") || currentPage === "/artale/";
+
+    if (!isLoginPage && localStorage.getItem("loggedIn") !== "1") {
+        location.href = "/artale/index.html";
     }
 
     const userAcc = localStorage.getItem("account");
@@ -38,6 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("logoutBtn").addEventListener("click", function () {
         localStorage.removeItem("loggedIn");
         localStorage.removeItem("account");
-        location.href = "../index.html";
+        location.href = "/artale";
     });
 });
