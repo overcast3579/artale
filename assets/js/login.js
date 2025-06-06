@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { acc: "4ed662e2f364214735d99e04fba35f99", pwd: "819b0643d6b89dc9b579fdfc9094f28e" }, // st
         { acc: "24f91952c16f1edf8ab98d8251493782", pwd: "34cc93ece0ba9e3f6f235d4af979b16c" }, // ah
         { acc: "3d200b72bf2ee84aef113d07ef0f9a7c", pwd: "db0edd04aaac4506f7edab03ac855d56" }, // vv
-        { acc: "0bfb977a728401d1fa735cf734bf9d17", pwd: "218dd27aebeccecae69ad8408d9a36bf" }, // oc
+        { acc: "30ec85b4d1ce02fe671cf56c94fe758b", pwd: "30ec85b4d1ce02fe671cf56c94fe758b" }, // oc
     ];
 
     loginForm.addEventListener("submit", function (e) {
