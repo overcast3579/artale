@@ -3,30 +3,50 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/index.css" />
         <title>index</title>
     </head>
-    <body>
-        <nav>
-            <ul>
-                <li>分頁1</li>
-                <li>分頁2</li>
-                <li>分頁3</li>
-            </ul>
+    <body class="bg-light">
+        <!-- 導覽列 -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+            <div class="container">
+                <a class="navbar-brand" href="#">Artale</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">分頁1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">分頁2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">分頁3</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <p>實用網站</p>
-        <ul>
-            <li>
-                <a href="https://docs.google.com/spreadsheets/d/1QPUvWV5HOx53IZ7Ft7FRd9hQkIg4mdGhUPnA_7for1E/edit?gid=415202180#gid=415202180">物價查詢excel</a>
-            </li>
 
-            <li><a href="https://a2983456456.github.io/artale-drop/">打怪掉落物查詢</a></li>
-            <li>
-                <a href="https://forum.gamer.com.tw/C.php?bsn=79354&snA=572">怪物蒐集品反向檢索任務對應表 (1~100)</a>
-            </li>
-            <li>
-                <a href="https://forum.gamer.com.tw/C.php?bsn=79354&snA=897">怪物大量分佈地圖整理 --- 適用版本 : 端午節改版</a>
-            </li>
-        </ul>
+        <!-- 內容區塊 -->
+        <div class="container">
+            <h2 class="mb-3">實用網站</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="https://docs.google.com/spreadsheets/d/1QPUvWV5HOx53IZ7Ft7FRd9hQkIg4mdGhUPnA_7for1E/edit?gid=415202180#gid=415202180" target="_blank">
+                        📊 物價查詢 Excel
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://a2983456456.github.io/artale-drop/" target="_blank">🧟‍♂️ 打怪掉落物查詢</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://forum.gamer.com.tw/C.php?bsn=79354&snA=572" target="_blank"> 📜 蒐集品任務對應表 (1~100) </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://forum.gamer.com.tw/C.php?bsn=79354&snA=897" target="_blank"> 🗺 怪物大量分佈地圖（端午版） </a>
+                </li>
+            </ul>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
