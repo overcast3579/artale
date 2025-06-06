@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.getElementById("loginForm");
-    const loginSection = document.getElementById("loginSection");
-    const mainContent = document.getElementById("mainContent");
     const users = [
         { acc: "faedfcfd0a77f12e8741873df8c6aa36", pwd: "7c6a180b36896a0a8c02787eeafb0e4c" }, // sa
         { acc: "39384f44c997c0a1adec1b3eb609ed0e", pwd: "6cb75f652a9b52798eb6cf2201057c73" }, // boo
@@ -19,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const hashedPwd = md5(password);
         const matchedUser = users.find(user => user.acc === hashedAcc && user.pwd === hashedPwd);
         if (matchedUser) {
-            loginSection.style.display = "none";
-            mainContent.style.display = "block";
+            localStorage.setItem("loggedIn", "1");
+            location.href = "html/home.html"; 
         } else {
             alert("帳號或密碼錯誤！");
         }
