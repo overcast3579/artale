@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (matchedUser) {
             localStorage.setItem("loggedIn", "1");
             localStorage.setItem("account", username);
-            location.href = "html/home.html"; 
+            setTimeout(() => {
+                location.href = "./html/home.html";
+            }, 100);
         } else {
             alert("帳號或密碼錯誤！");
         }
