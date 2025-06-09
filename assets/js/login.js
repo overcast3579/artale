@@ -25,8 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (matchedUser) {
             localStorage.setItem("loggedIn", "1");
             localStorage.setItem("account", username);
-    console.log("localStorage.loggedIn:", localStorage.getItem("loggedIn"));
-    console.log("localStorage.account:", localStorage.getItem("account"));
             setTimeout(() => {
                 location.href = "./html/home.html";
             }, 100);
