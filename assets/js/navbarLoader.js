@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(res => res.text())
         .then(html => {
             navbarContainer.innerHTML = html;
+            console.log('navbarContainer navbar loader', navbarContainer)
         })
         .then(() => {
             const isLoggedIn = localStorage.getItem("loggedIn") === "1";
