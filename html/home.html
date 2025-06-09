@@ -34,6 +34,7 @@
         <!-- 內容區塊 -->
         <div class="container">
             <h2 class="mb-3">實用網站</h2>
+            <ul class="list-group" id="useful-links-list"></ul>
             <ul class="list-group">
                 <li class="list-group-item">
                     <a href="https://docs.google.com/spreadsheets/d/1QPUvWV5HOx53IZ7Ft7FRd9hQkIg4mdGhUPnA_7for1E/edit?gid=415202180#gid=415202180" target="_blank">
@@ -53,11 +54,60 @@
         </div>
         <script src="../assets/js/navbarLoader.js"></script>
         <script src="../assets/js/auth.js"></script>
-        <!-- <script>
-            checkLogin({
-                navbarPath: "./common/navbar.html",
-                redirectPath: "../index.html",
+        <script>
+            const usefulLinks = [
+                {
+                    text: "📊 物價查詢 Excel",
+                    url: "https://docs.google.com/spreadsheets/d/1QPUvWV5HOx53IZ7Ft7FRd9hQkIg4mdGhUPnA_7for1E/edit?gid=415202180#gid=415202180",
+                },
+                {
+                    text: "🧟‍♂️ 打怪掉落物查詢",
+                    url: "https://a2983456456.github.io/artale-drop/",
+                },
+                {
+                    text: "📜 蒐集品任務對應表 (1~100)",
+                    url: "https://forum.gamer.com.tw/C.php?bsn=79354&snA=572",
+                },
+                {
+                    text: "🗺 怪物大量分佈地圖（端午版）",
+                    url: "https://forum.gamer.com.tw/C.php?bsn=79354&snA=897",
+                },
+                {
+                    text: "💰 第三方交易平台",
+                    url: "https://artale-market.org/price-trends?date=latest",
+                },
+                {
+                    text: "🧪 裝備衝卷軸次數&成功機率整理",
+                    url: "https://vocus.cc/article/683cfca0fd89780001a87219",
+                },
+                {
+                    text: "🎓 Artale 三轉題庫（Google 試算表）",
+                    url: "https://docs.google.com/spreadsheets/u/0/d/14cPWtXPSlyJah2RVLFg6sfywfsIN3LymzAohgLu67wI/htmlview?pli=1&fbclid=IwY2xjawKOPVNleHRuA2FlbQIxMQABHkhfonSXjtOSHbKt1TcO4UwFbsMN-h3lJQxV2XOJ5_RiWh5oXAI7vF2VUdhA_aem_1g3XfV7SBRPfY6V27iDUTg",
+                },
+                {
+                    text: "📘 Artale 三轉題庫（巴哈）",
+                    url: "https://forum.gamer.com.tw/C.php?bsn=79354&snA=1151",
+                },
+                {
+                    text: "🗂 Artale 三轉題庫（Maplestw）",
+                    url: "https://maplestw.com/3rd/",
+                },
+            ];
+
+            const listContainer = document.getElementById("useful-links-list");
+
+            usefulLinks.forEach((link) => {
+                const li = document.createElement("li");
+                li.className = "list-group-item";
+
+                const a = document.createElement("a");
+                a.href = link.url;
+                a.target = "_blank";
+                a.textContent = link.text;
+
+                li.appendChild(a);
+                listContainer.appendChild(li);
             });
-        </script> -->
+        </script>
     </body>
 </html>
