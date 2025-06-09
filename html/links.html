@@ -11,15 +11,26 @@
     </head>
     <body class="bg-light">
         <div id="navbar-container"></div>
+        <div class="container mt-4">
+            <div class="input-group mb-3">
+                <input id="search-input" type="text" class="form-control" placeholder="搜尋連結…" />
+                <button id="clear-search-btn" class="btn btn-outline-secondary" type="button">❌</button>
+            </div>
+            <ul class="nav nav-tabs mb-3" id="category-tabs" role="tablist">
+                <!-- JS 動態插入 tabs -->
+            </ul>
 
-        <!-- 內容區塊 -->
-        <div class="container">
-            <h2 class="mb-3">首頁要放啥</h2>
+            <ul class="list-group" id="useful-links-list">
+                <!-- JS 動態插入連結 -->
+            </ul>
         </div>
+
         <script src="../assets/js/auth.js"></script>
         <script>
             checkLogin();
         </script>
         <script src="../assets/js/navbarLoader.js"></script>
+        <script src="../assets/js/linksData.js"></script>
+        <script type="module" src="../assets/js/links.js"></script>
     </body>
 </html>
