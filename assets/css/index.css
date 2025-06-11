@@ -7,7 +7,13 @@ body {
     line-height: 1.6;
     padding: 20px;
 }
+:root {
+  --soft-blue: #5b9bd5;
+}
 
+.bg-soft-blue {
+  background-color: var(--soft-blue) !important;
+}
 /* 標題段落 */
 p {
     font-size: 20px;

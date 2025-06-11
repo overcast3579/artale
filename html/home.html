@@ -16,10 +16,55 @@
         <div class="container">
             <h2 class="mb-3">首頁要放啥</h2>
         </div>
+
+        <!-- 女神400 -->
+        <div class="container mt-5">
+            <div class="row justify-content-center align-items-start">
+                <div class="col-md-6 col-lg-5 mb-3">
+                    <div class="card p-4 w-100 shadow-sm" style="background-color: #f8f9fa; border-radius: 1rem">
+                        <div class="card-header text-center bg-soft-blue text-white rounded" style="border-radius: 0.75rem">
+                            女神400小工具
+                            <span class="d-block mt-1 small text-white-50">
+                                點第一個欄位會清空全部<br />
+                                輸入完四個數字自動顯示結果
+                            </span>
+                        </div>
+
+                        <div class="card-body text-center">
+                            <div class="d-flex justify-content-center gap-2 mb-3 flex-wrap">
+                                <div class="text-center">
+                                    <label for="input0" class="form-label">初始</label>
+                                    <input type="number" class="form-control text-center no-arrow" id="input0" style="width: 60px" min="0" max="3" />
+                                </div>
+                                <div class="text-center">
+                                    <label for="inputL" class="form-label">左邊</label>
+                                    <input type="number" class="form-control text-center no-arrow" id="inputL" style="width: 60px" min="0" max="3" />
+                                </div>
+                                <div class="text-center">
+                                    <label for="inputM" class="form-label">中間</label>
+                                    <input type="number" class="form-control text-center no-arrow" id="inputM" style="width: 60px" min="0" max="3" />
+                                </div>
+                                <div class="text-center">
+                                    <label for="inputR" class="form-label">右邊</label>
+                                    <input type="number" class="form-control text-center no-arrow" id="inputR" style="width: 60px" min="0" max="3" />
+                                </div>
+                            </div>
+                            <div id="result" class="mt-3"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5 d-flex justify-content-center">
+                    <img src="../img/cd.png" alt="CD顏色" class="img-fluid" style="max-height: 300px; object-fit: contain" />
+                </div>
+            </div>
+        </div>
+
         <script src="../assets/js/auth.js"></script>
         <script>
             checkLogin();
         </script>
         <script src="../assets/js/navbarLoader.js"></script>
+        <script src="../assets/js/platformSolver.js"></script>
     </body>
 </html>
