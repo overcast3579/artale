@@ -41,3 +41,56 @@ a {
 a:hover {
     color: #1a4f91;
 }
+
+.hover-dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.navbar .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-nav.me-auto .nav-item {
+    margin-right: 10px;
+    border-bottom: 1px solid #a5c7e6;
+}
+.navbar-nav .nav-item {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    margin: 0 4px;
+}
+
+/* 下拉選單背景與邊框 */
+.dropdown-menu {
+    background-color: #dceaf8;
+    border: 1px solid #b3cce6;
+    border-radius: 6px;
+    padding: 0;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 每個選項之間的分隔與樣式 */
+.dropdown-menu .dropdown-item {
+    border-bottom: 1px solid #c2d8ee;
+    padding: 10px 16px;
+    color: #1a4f91;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 最後一個不需要 border-bottom */
+.dropdown-menu .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* 滑鼠 hover 時的效果 */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #c5dcf2;
+    color: #0d305e;
+}

@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { acc: "24f91952c16f1edf8ab98d8251493782", pwd: "34cc93ece0ba9e3f6f235d4af979b16c" }, // ah
         { acc: "3d200b72bf2ee84aef113d07ef0f9a7c", pwd: "db0edd04aaac4506f7edab03ac855d56" }, // vv
         { acc: "30ec85b4d1ce02fe671cf56c94fe758b", pwd: "30ec85b4d1ce02fe671cf56c94fe758b" }, // oc
+        { acc: "00c8db785a59b2540d991a08f9bfb220", pwd: "474d0dd8a989e0262d2eb9b899144190" }, // mal
     ];
 
     // 每次開啟登入頁先清掉登入狀態
