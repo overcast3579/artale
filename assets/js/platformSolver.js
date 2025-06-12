@@ -62,4 +62,47 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // cd亮色
+    const weekdayColors = [
+        '#DD3D1C', // 星期一 橘色
+        '#ECAC1F', // 星期二 黃色
+        '#761472', // 星期三 紫色
+        '#090E77', // 星期四 深藍
+        '#1173C6', // 星期五 淺藍
+        '#319512', // 星期六 綠色
+        '#D8111C', // 星期日 紅色
+    ];
+
+    const now = new Date();
+    let adjustedDay = now.getDay(); // 0 = 星期日
+    const hour = now.getHours();
+
+    // 還沒到當天 13:00 → 算前一天
+    if (hour < 13) {
+        adjustedDay -= 1;
+        if (adjustedDay < 0) adjustedDay = 6; // -1 → 星期日
+    }
+
+    // 轉成你的一～日順序（0 = 一，6 = 日）
+    const dayIndex = (adjustedDay === 0) ? 6 : adjustedDay - 1;
+
+    const days = document.querySelectorAll('#weekdayBar .day-box');
+
+    // 依當天亮
+    days.forEach((day, index) => {
+        if (index === dayIndex) {
+            day.style.backgroundColor = weekdayColors[index];
+            day.style.color = 'white';
+        } else {
+            day.style.backgroundColor = 'white';
+            day.style.color = '#495057';
+        }
+    });
+
+    // 全亮
+    // days.forEach((day, index) => {
+    //     day.style.backgroundColor = weekdayColors[index];
+    //     day.style.color = 'white';
+    // });
 });
