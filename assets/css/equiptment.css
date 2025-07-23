@@ -1,0 +1,22 @@
+@keyframes flash-gold {
+  0% { border: 10px solid gold; }
+  100% { border: 1px solid transparent; }
+}
+
+@keyframes flash-black {
+  0% { border: 10px solid black; }
+  100% { border: 1px solid transparent; }
+}
+
+.flash-gold {
+  animation: flash-gold 0.5s ease-in-out;
+}
+
+.flash-black {
+  animation: flash-black 0.5s ease-in-out;
+}
+
+.equip-box {
+  border: 1px solid #ccc;
+  transition: border 0.2s ease-in-out;
+}
